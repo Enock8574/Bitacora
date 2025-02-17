@@ -21,13 +21,13 @@ if (!isset($_SESSION['username'])) {
         <nav>
             <ul>
                 <li class="logo"><img src="img\Smtjapaneselogo.webp" alt="Icono" width: 80px;></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="POS.html">POS</a></li>
-                <li><a href="#">PC</a></li>
-                <li><a href="#">PDA</a></li>
-                <li><a href="#">PDT</a></li>
-                <li><a href="WYSE.html">WYSE</a></li>
-                <li><a href="Upload.html">Sube tu manual</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="POS.php">POS</a></li>
+                <li><a href="PC.php">PC</a></li>
+                <li><a href="PDA.php">PDA</a></li>
+                <li><a href="PDT.php">PDT</a></li>
+                <li><a href="WYSE.php">WYSE</a></li>
+                <li><a href="Upload.php">Sube tu manual</a></li>
                 <form action="Backend\logout.php" method="POST">
                     <button type="submit">Cerrar Sesión</button>
                 </form>

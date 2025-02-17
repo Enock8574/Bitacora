@@ -9,10 +9,40 @@ body {
     animation: gradientAnimation 15s ease infinite;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 100%;
+    }
+}
+
 @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
@@ -38,8 +68,10 @@ nav ul li.logo {
 }
 
 nav ul li.logo img {
-    width: 50px; /* Cambia el tamaño aquí */
-    height: 50px; /* Cambia el tamaño aquí */
+    width: 50px;
+    /* Cambia el tamaño aquí */
+    height: 50px;
+    /* Cambia el tamaño aquí */
 }
 
 nav ul li a {
