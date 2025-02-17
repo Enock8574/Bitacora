@@ -15,7 +15,7 @@
             <br>
             <label for="password">Contraseña:</label>
             <input type="password" id="pass" name="pass" required>
-            <br>
+            <br><br>
             <input type="submit" value="Ingresar">
         </form>
     </div>
