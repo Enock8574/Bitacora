@@ -1,36 +1,42 @@
-<?php
-// Establece límites de tamaño de archivo para la subida
-ini_set('upload_max_filesize', '50M');
-ini_set('post_max_size', '50M');
+<!DOCTYPE html>
+<html lang="es">
 
-// Define la carpeta donde se guardarán los PDFs
-$target_dir = "PDF/";
-$target_file = $target_dir . basename($_FILES["file"]["name"]);
-$uploadOk = 1;
-$fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora IT F5 - Manuales</title>
+    <link rel="stylesheet" href="CSS\styles.css">
+</head>
 
-// Comprueba si el archivo es un PDF
-if ($fileType != "pdf") {
-    echo "Solo se permiten archivos PDF.";
-    $uploadOk = 0;
-}
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="img\Smtjapaneselogo.webp" alt="Icono" width: 80px;></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="POS.php">POS</a></li>
+                <li><a href="PC.php">PC</a></li>
+                <li><a href="PDA.php">PDA</a></li>
+                <li><a href="PDT.php">PDT</a></li>
+                <li><a href="WYSE.php">WYSE</a></li>
+                <li><a href="Upload.php">Sube tu manual</a></li>
+                <form action="Backend\logout.php" method="POST">
+                    <button type="submit">Cerrar Sesión</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Sube aqui tu manual</h1>
+        <div class="upload-form">
+            <h2>Subir PDF</h2>
+            <form action="Backend\upload.php" method="post" enctype="multipart/form-data">
+                <label for="file">Seleccionar archivo PDF:</label>
+                <input type="file" name="file" id="file" accept=".pdf" required>
+                <button type="submit">Subir</button>
+            </form>
+        </div>
+    </main>
+</body>
 
-// Comprueba si el archivo ya existe
-if (file_exists($target_file)) {
-    echo "El archivo ya existe.";
-    $uploadOk = 0;
-}
-
-// Comprueba si $uploadOk es 0 por un error
-if ($uploadOk == 0) {
-    echo "Lo siento, tu archivo no fue subido.";
-// Si todo está bien, intenta subir el archivo
-} else {
-    if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-        echo "El archivo ". htmlspecialchars(basename($_FILES["file"]["name"])). " ha sido subido.";
-        header("Refresh: 2; url=Upload.html");
-    } else {
-        echo "Lo siento, hubo un error al subir tu archivo.";
-    }
-}
-?>
+</html>

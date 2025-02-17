@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora IT F5 - POS</title>
+    <title>Bitácora IT F5 - PDA</title>
     <link rel="stylesheet" href="CSS\styles.css">
 </head>
 
@@ -27,24 +27,23 @@
         </nav>
     </header>
     <main class="container">
-        <h1>POS</h1>
-        <p>Aquí encontraras manuales para configuraciones, desmantelamientos y mantenimientos orientado para POS.</p>
+        <h1>PDA</h1>
+        <p>Aquí encontraras manuales para configuraciones de PDA.</p>
         <div class="submenu">
             <h2>Software</h2>
             <ul>
-                <li><a href="PDF\Instalación Hypernova en POS.pdf" target="_blank">Instalacion de servicio Hypernova
-                        (LocalSender)</a></li>
+                <li><a href="" target=""></a></li>
 
             </ul>
             <h2>Mantenimiento</h2>
             <ul>
-                <li><a href="pdfs/mantenimiento1.pdf" target="_blank">Artículo Mantenimiento 1</a></li>
-                <li><a href="pdfs/mantenimiento2.pdf" target="_blank">Artículo Mantenimiento 2</a></li>
+                <li><a href="" target="_blank">Artículo Mantenimiento 1</a></li>
+                <li><a href="" target="_blank">Artículo Mantenimiento 2</a></li>
             </ul>
             <h2>Hardware</h2>
             <ul>
-                <li><a href="pdfs/hardware1.pdf" target="_blank">Artículo Hardware 1</a></li>
-                <li><a href="pdfs/hardware2.pdf" target="_blank">Artículo Hardware 2</a></li>
+                <li><a href="" target="_blank">Artículo Hardware 1</a></li>
+                <li><a href="" target="_blank">Artículo Hardware 2</a></li>
             </ul>
         </div>
     </main>
