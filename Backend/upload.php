@@ -4,7 +4,7 @@ ini_set('upload_max_filesize', '50M');
 ini_set('post_max_size', '50M');
 
 // Define la carpeta donde se guardarán los PDFs
-$target_dir = "/PDF";
+$target_dir = "../PDF/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
 $uploadOk = 1;
 $fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
