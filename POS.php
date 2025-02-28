@@ -42,6 +42,7 @@ if (!isset($_SESSION['username'])) {
             <ul>
                 <li><a href="PDF\Instalación Hypernova en POS.pdf" target="_blank">Instalacion de servicio Hypernova
                         (LocalSender)</a></li>
+                <li><a href="PDF\MANUAL - ACTUALIZAR FRONTRETAIL A LA VERSIÓN 9051.284 EN POS DE RESPALDO.pdf">Actualizar FrontRetail version 9051.284</a></li>
 
             </ul>
             <h2>Mantenimiento</h2>

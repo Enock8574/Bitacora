@@ -28,7 +28,7 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
         echo "El archivo ". htmlspecialchars(basename($_FILES["file"]["name"])). " ha sido subido.";
-        header("Refresh: 2; url=Upload.php");
+        header("Refresh: 2; url=../Upload.php");
     } else {
         echo "Lo siento, hubo un error al subir tu archivo.";
     }
